@@ -1,4 +1,4 @@
-##Atividade de Python - Estrutura de um Chat
+# Atividade de Python - Estrutura de um Chat
 
 ## Descrição
 Este projeto é uma atividade simples de Python que simula a estrutura de um chat. O objetivo é praticar o uso do laço `while` e condições com `if` em Python. Este chat não está conectado à internet, ele serve apenas para fins de aprendizado.
