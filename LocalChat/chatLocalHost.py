@@ -7,24 +7,24 @@ s_ip = socket.gethostbyname(host_name)
 port = 8080
 
 new_socket.bind((host_name, port))
-print("Binding successful!")
-print("This is your IP: ", s_ip)
+print("Conectado com sucesso!")
+print("Esse é o seu IP: ", s_ip)
 
-name = input('Enter name: ')
+name = input('Digite seu nome: ')
 
 new_socket.listen(1)
 
 conn, add = new_socket.accept()
  
-print("Received connection from ", add[0])
-print('Connection Established. Connected From: ',add[0])
+print("Recebendo conexão de ", add[0])
+print('Conexão estabelecida. Conectado de: ',add[0])
  
 client = (conn.recv(1024)).decode()
-print(client + ' has connected.')
+print(client + ' Entrou.')
  
 conn.send(name.encode())
 while True:
-    message = input('Me : ')
+    message = input(name + ': ')
     conn.send(message.encode())
     message = conn.recv(1024)
     message = message.decode()
