@@ -18,7 +18,7 @@ while True:
 
     print('________________________________________')
 
-    texto = input('mesnagem: ')
+    texto = input(nome + ': ')
     if texto == '/quit':
         break
 
